@@ -15,12 +15,12 @@
 </head>
 
 <body>
-    <h1 class="text-center text-primary">Greatest of 2 numbers</h1>
+    <h1 class="text-center text-info mt-5">Greatest of 2 numbers</h1>
     <div class="container w-50 p-3">
-        <input type="text" placeholder="Input Num1" id="n1" class="form-control"><br>
-        <input type="text" placeholder="Input Num2" id="n2" class="form-control">
+        <input type="text" placeholder="Input Num1" id="n1" class="form-control text-info"><br>
+        <input type="text" placeholder="Input Num2" id="n2" class="form-control text-info">
         <div class="mt-5 text-center">
-            <button onclick="greatest()" type="submit" class="btn btn-outline-primary ">Check</button>
+            <button onclick="greatest()" type="submit" class="btn btn-outline-dark ">Check</button>
         </div>
     </div>
 </body>
@@ -31,13 +31,13 @@
         num1 = n1.value
         num2 = n2.value
         if (num1 > num2) {
-            alert(num1, 'is greatest')
+            alert(num1+ ' is greatest')
         }
         else if (num2 > num1) {
-            alert(num2, 'is greatest')
+            alert(num2+ ' is greatest')
         }
         else {
-            alert('both numbers are equal')
+            alert('Both numbers are equal')
         }
     }
 
